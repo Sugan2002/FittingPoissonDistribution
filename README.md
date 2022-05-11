@@ -44,14 +44,14 @@ f=[153,169,72,31,12,6,2]
 n=6
 N=np.sum(f)
 mean=np.inner(X,f)/N
-Pr=list(); E=list(); xi=list()
+Prob=list(); E=list(); xi=list()
 print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
 for x in range(7):
-    Pr.append(math.exp(-mean)mean*x/math.factorial(x))
-    E.append(Pr[x]*N)
+    Prob.append(math.exp(-mean)*mean*x/math.factorial(x))
+    E.append(Prob[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
-    print("%2.2f %2.2f  %4.2f   %3.2f  %3.2f"%(x,Pr[x],f[x],E[x],xi[x]))
+    print("%2.2f %2.2f  %4.2f   %3.2f   %3.2f"%(x,Prob[x],f[x],E[x],xi[x]))
 print("----------------------------------")
 cal_chi2=np.sum(xi)
 print("Calculated value of Chi square is %4.2f"%cal_chi2)
@@ -65,8 +65,7 @@ else:
 ```
 
 # Output:
-
-
+![Pqm_Exp2_Output](https://user-images.githubusercontent.com/77089743/167773827-c6b86b0b-c033-404d-9459-6039891c5161.PNG)
 
 # Results: 
      Thus, the program has been written and verified successfully.
