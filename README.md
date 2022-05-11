@@ -64,9 +64,10 @@ else:
 
 ```
 
-
 </br>
+
 # Output:
+
 ![Pqm_Exp2_Output](https://user-images.githubusercontent.com/77089743/167773827-c6b86b0b-c033-404d-9459-6039891c5161.PNG)
 
 # Results: 
