@@ -48,7 +48,7 @@ Prob=list(); E=list(); xi=list()
 print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
 for x in range(7):
-    Prob.append(math.exp(-mean)*mean*x/math.factorial(x))
+    Prob.append(math.exp(-mean)*mean**x/math.factorial(x))
     E.append(Prob[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.2f  %4.2f   %3.2f   %3.2f"%(x,Prob[x],f[x],E[x],xi[x]))
@@ -81,8 +81,8 @@ else:
 </br>
 
 # Output:
+![Exp2_output](https://user-images.githubusercontent.com/77089743/168959562-0d261875-6f78-44e5-989b-d5b16825cc87.PNG)
 
-![Pqm_Exp2_Output](https://user-images.githubusercontent.com/77089743/167773827-c6b86b0b-c033-404d-9459-6039891c5161.PNG)
 
 # Results: 
      Thus, the program has been written and verified successfully.
